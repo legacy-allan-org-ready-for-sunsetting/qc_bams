@@ -1,0 +1,15 @@
+{
+    'reference_sequence': {   'class': 'File',
+                              'path': '/path/to/ref.fasta'
+                          }
+    'bam': { 'class': 'File',
+             'path': '/path/to/file.bam',
+             'secondaryFiles': [ { 'class': 'File',
+                                   'path': '/path/to/file.bam.bai' 
+                                } ]
+           }
+
+    'bed': { 'class': 'File',
+             'path': '/path/to/optional/file.bed' 
+           }
+}
