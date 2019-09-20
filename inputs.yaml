@@ -1,6 +1,9 @@
 {
     'reference_sequence': {   'class': 'File',
-                              'path': '/path/to/ref.fasta'
+                              'path': '/path/to/ref.fasta',
+                              'secondaryFiles': [ { 'class': 'File',
+                                                    'path': '/path/to/ref.fasta.fai'
+                                                } ]
                           },
     'bam': { 'class': 'File',
              'path': '/path/to/file.bam',

@@ -12,6 +12,8 @@ inputs:
 
   reference_sequence:
     type: File
+    secondaryFiles:
+      - .fai
 
   bed:
     type: File?
