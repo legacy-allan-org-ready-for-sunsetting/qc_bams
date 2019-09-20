@@ -7,7 +7,7 @@ inputs:
   bam:
     type: File
     secondaryFiles:
-      - .bai
+      - ^.bai
 
   reference_sequence:
     type: File
