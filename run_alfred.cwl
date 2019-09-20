@@ -13,7 +13,9 @@ inputs:
     type: File
 
   bed:
-    type: File?
+    type: File
+    secondaryFiles:
+      - .tbi
  
 outputs:
   bam_qc_alfred_rg:
@@ -46,8 +48,8 @@ steps:
       bam: bam
       reference: reference_sequence
       bed: bed
-      bed:
-        valueFrom: ${ return True; }
+      ignore_rg:
+        valueFrom: ${ return true; }
     out: [ output, output_pdf ]
     run: command_line_tools/alfred_0.1.17/alfred_0.1.17.cwl
 
