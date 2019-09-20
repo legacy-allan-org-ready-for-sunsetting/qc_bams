@@ -13,7 +13,7 @@ inputs:
     type: File
 
   bed:
-    type: File
+    type: File?
     secondaryFiles:
       - .tbi
  
