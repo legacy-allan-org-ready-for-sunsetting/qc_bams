@@ -1,0 +1,3 @@
+[submodule "command_line_tools/alfred_0.1.17"]
+	path = command_line_tools/alfred_0.1.17
+	url = https://github.com/mskcc-cwl/alfred_0.1.17
