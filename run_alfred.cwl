@@ -8,6 +8,7 @@ inputs:
     type: File
     secondaryFiles:
       - ^.bai
+      - .bai
 
   reference_sequence:
     type: File
@@ -19,19 +20,19 @@ inputs:
  
 outputs:
   bam_qc_alfred_rg:
-    type: File
+    type: File?
     outputSource: run_alfred_rg/output
 
   bam_qc_alfred_ignore_rg:
-    type: File
+    type: File?
     outputSource: run_alfred_ignore_rg/output
 
   bam_qc_alfred_rg_pdf:
-    type: File
+    type: File?
     outputSource: run_alfred_rg/output_pdf
 
   bam_qc_alfred_ignore_rg_pdf:
-    type: File
+    type: File?
     outputSource: run_alfred_ignore_rg/output_pdf
   
 steps:

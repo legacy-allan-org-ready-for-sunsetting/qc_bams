@@ -9,9 +9,9 @@
                                 } ]
            },
     'bed': { 'class': 'File',
-             'path': '/path/to/file.bed', 
+             'path': '/path/to/optional/file.bed', 
              'secondaryFiles': [ { 'class': 'File',
-                                   'path': '/path/to/file.bed.tbi' 
+                                   'path': '/path/to/optional/file.bed.tbi' 
                                 } ]
            }
 }
